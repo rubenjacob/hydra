@@ -306,7 +306,7 @@ def _run_hydra(
 
     from .hydra import Hydra
 
-    args = args_parser.parse_args()
+    args, _ = args_parser.parse_known_args()
     if args.config_name is not None:
         config_name = args.config_name
 
