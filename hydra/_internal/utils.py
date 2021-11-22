@@ -532,6 +532,7 @@ def get_args_parser() -> argparse.ArgumentParser:
         choices=info_choices,
         help=f"Print Hydra information [{'|'.join(info_choices)}]",
     )
+    parser.add_argument("-j")
     return parser
 
 
